@@ -3,13 +3,14 @@ import { CardTecnologies } from "./Card-Tecnologies/Card-Tenologies";
 import JavaScript from "../../assets/tecnologies/javascript.png";
 import ReactJs from "../../assets/tecnologies/reactjs.png";
 import Node from "../../assets/tecnologies/nodejs.png";
-import TypeScript from "../../assets/tecnologies/typeScript.png"
-import StyledComponents from "../../assets/tecnologies/styledComponents.png"
-import GraphQl from "../../assets/tecnologies/graphql.png"
+import TypeScript from "../../assets/tecnologies/typeScript.png";
+import StyledComponents from "../../assets/tecnologies/styledComponents.png";
+import GraphQl from "../../assets/tecnologies/graphql.png";
 
+import "../../pages/container.css";
 export const MyTecnologies = [
   {
-    image: JavaScript ,
+    image: JavaScript,
     name: "Javascript",
     description:
       "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.",
@@ -52,18 +53,21 @@ export const MyTecnologies = [
 
 export const Tecnologies = () => {
   return (
-    <div className="">
-      {MyTecnologies.map(({description,name,image}) => {
-        return (
-          <>
-            <CardTecnologies
-              image={image}
-              name={name}
-              description={description}
-            />
-          </>
-        );
-      })}
-    </div>
+    <>
+      <h1 style={{ "textAlign": "center"}}>Tecnologias</h1>
+      <div className="container">
+        {MyTecnologies.map(({ description, name, image }) => {
+          return (
+            <>
+              <CardTecnologies
+                image={image}
+                name={name}
+                description={description}
+              />
+            </>
+          );
+        })}
+      </div>
+    </>
   );
 };

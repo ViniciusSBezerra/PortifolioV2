@@ -1,0 +1,40 @@
+@media screen and (max-width: 1440px) {
+  .container{
+    width: 100%;
+
+    max-width: 1100px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+
+    }
+}
+@media screen and (max-width: 425px)  {
+
+  /*max-width: a tela se comporta alterando todas os container definidos a  BAIXO da resolução definida!*/
+    .container{
+
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 50px;
+
+      margin: 0 auto;
+      padding: 10px;
+
+    }
+}

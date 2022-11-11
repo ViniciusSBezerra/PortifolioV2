@@ -1,0 +1,96 @@
+@media screen and (max-width: 1440px) {
+  .containerAboutme{
+    max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    margin: 0 auto;
+
+
+
+
+  }
+
+  .containerPhoto{
+    max-width: 500px;
+
+    border: solid 3px rgba(0, 0, 0, .1);;
+
+    border-radius: 50%;
+  }
+
+  .aboutMeText{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 20px;
+    color:  rgba(0,0,0,.7);;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containerAboutme{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .containerPhoto{
+    max-width: 400px;
+
+    border: solid 3px rgba(0, 0, 0, .1);;
+
+    border-radius: 50%;
+  }
+
+  .aboutMeText{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 20px;
+    color:  rgba(0,0,0,.7);;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .containerAboutme{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .containerPhoto{
+    max-width: 250px;
+
+    border: solid 3px rgba(0, 0, 0, .1);;
+
+    border-radius: 50%;
+  }
+
+  .aboutMeText{
+
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 20px;
+  }
+}
+
